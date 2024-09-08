@@ -1,0 +1,41 @@
+.gallery_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.gallery_section h2 {
+    font-size: 3.5rem;
+    color: var(--light-red);
+}
+
+.gallery_section .para {
+    color: var(--grey);
+    padding: 10px 100px;
+    font-size: 19px;
+}
+
+.gallery_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery_col {
+    margin-bottom: 30px;
+}
+
+.gallery_image {
+    overflow: hidden; /* Ensures the image doesn't overflow its container during scaling */
+}
+
+.gallery_image img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Adds a transition effect */
+}
+
+.gallery_image img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    opacity: 0.9; /* Reduces opacity slightly on hover */
+}

@@ -1,0 +1,27 @@
+.cart-details {
+    padding: 20px;
+  }
+  
+  .cart-details ul {
+    list-style: none;
+  }
+  
+  .cart-details li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .checkout-button {
+    background-color: #ff9800;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
