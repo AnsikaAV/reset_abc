@@ -12,7 +12,8 @@ if ($conn->connect_error) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$stmt = $conn->prepare("SELECT id, user_type FROM users WHERE email = ? AND password = ?");
+$stmt = $conn->prepare("SELECT id, user_type FROM us
+ers WHERE email = ? AND password = ?");
 $stmt->bind_param("ss", $email, $password);
 $stmt->execute();
 $stmt->store_result();
@@ -24,6 +25,8 @@ if ($stmt->num_rows > 0) {
 } else {
     echo json_encode(["success" => false, "message" => "Invalid credentials"]);
 }
+
+
 
 $stmt->close();
 $conn->close();
